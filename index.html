@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ibonarium.sun.lab.live.pro</title>
+<title>SOLAR MEGA STACK</title>
 
 <style>
 html, body {
@@ -11,13 +11,12 @@ html, body {
     padding: 0;
     background: #000;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 /* Контейнер */
 .stack {
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 /* Блок iframe */
@@ -26,28 +25,30 @@ html, body {
     margin: 0;
     padding: 0;
     line-height: 0;
+    overflow: hidden;
 }
 
 /* iframe */
 .frame iframe {
     width: 100%;
-    height: 1150px;
+    height: 1300px; /* збільшено щоб не було внутрішнього скролу */
     border: none;
     display: block;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 /* Мобільні */
 @media (max-width: 768px) {
     .frame iframe {
-        height: 1050px;
+        height: 1200px;
     }
 }
 
 @media (max-width: 480px) {
     .frame iframe {
-        height: 950px;
+        height: 1100px;
     }
 }
 </style>
@@ -59,22 +60,34 @@ html, body {
 
     <!-- 1 -->
     <div class="frame">
-        <iframe src="https://lavandaaudit.github.io/SOLAR-FLARE-INTERCEPT/"></iframe>
+        <iframe
+            src="https://lavandaaudit.github.io/SOLAR-FLARE-INTERCEPT/"
+            scrolling="no">
+        </iframe>
     </div>
 
     <!-- 2 -->
     <div class="frame">
-        <iframe src="https://lavandaaudit.github.io/solar.viter/"></iframe>
+        <iframe
+            src="https://lavandaaudit.github.io/solar.viter/"
+            scrolling="no">
+        </iframe>
     </div>
 
     <!-- 3 -->
     <div class="frame">
-        <iframe src="https://lavandaaudit.github.io/MAGNETOSPHERE-INTERCEPT/"></iframe>
+        <iframe
+            src="https://lavandaaudit.github.io/MAGNETOSPHERE-INTERCEPT/"
+            scrolling="no">
+        </iframe>
     </div>
 
     <!-- 4 -->
     <div class="frame">
-        <iframe src="https://lavandaaudit.github.io/live.monitor.lab/"></iframe>
+        <iframe
+            src="https://lavandaaudit.github.io/live.monitor.lab/"
+            scrolling="no">
+        </iframe>
     </div>
 
 </div>
